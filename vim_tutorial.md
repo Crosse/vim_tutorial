@@ -1,5 +1,7 @@
 # Vim Tutorial
 
+(Need a .vimrc to get you started on your way to customization glory? [Use mine!][my .vimrc])
+
 ## Important Things:  Starting, Quitting, Modes
 
 * Start Vim by typing `vim`, not `vi`.
@@ -179,7 +181,7 @@
   a couple of the most useful methods.  You should be in Normal mode
   (hit `<Esc>` to get there from Insert mode) for all of these.
     * To replace all occurrences of the word "cat" with "dog" _in a
-      document_, type `:%s/cat/dog/`
+      document_, type `:%s/cat/dog/g`
     * To replace all occurrences of the word "cat with "dog" _on the
       current line_, type `:s/cat/dog/g`.  (Note the absence of the
       percentage sign!)
@@ -237,11 +239,13 @@
     * Built-in `ctags` support
     * It's not emacs!
 
-* See [my .vimrc][] (http://code.crosse.org/dotfiles/src/master/.vimrc)
+* See [my .vimrc][] (https://raw.githubusercontent.com/Crosse/vimfiles/master/vimrc)
   for a fully-annotated example of a `.vimrc` configuration file that
-  includes many of the above features.
+  includes many of the above features. Clone [the repo][] to `$HOME/.vim` and run `make`
+  (OSX/Linux only) for added fun.
 
 
 [OpenVim]: http://www.openvim.com/tutorial.html
 [Vim Adventures]: http://vim-adventures.com
-[my .vimrc]: http://code.crosse.org/dotfiles/src/master/.vimrc
+[my .vimrc]: https://raw.githubusercontent.com/Crosse/vimfiles/master/vimrc
+[the repo]: https://github.com/crosse/vimfiles/
